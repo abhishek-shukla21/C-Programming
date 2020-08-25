@@ -1,0 +1,100 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int response;
+    int  numbers();
+    int  starsTriangle();
+    int  oneZero();
+    int  square();
+    int  number_right_triangle();
+    int  diamond();
+    int number_RAT();
+    while(1)
+    {
+        printf("\n\n***For Loops Programs:**\n");
+        printf("\n1. Numbers from 0-10\n");
+        printf("2. Right Angle Triangle)\n");
+        printf("3. Right Angled Triangle\n");
+        printf("4. Number Right Angled Triangle Type one\n");
+        printf("5. Square\n");
+        printf("5. Numbers Right Angled Triangle\n");
+        printf("Enter your response\n Press 10 to exit the Program.\n");
+        scanf("%d",&response);
+        switch(response)
+        {
+            case 1 : numbers(); break;
+            case 2 : starsTriangle(); break;
+            case 3 : oneZero(); break;
+            case 4 : number_RAT(); break;
+            case 5 : square(); break;
+            case 6 : number_right_triangle(); break;
+            case 10 : exit(1);
+            default : printf("***Enter Valid Number***\n");
+        }
+
+    }
+
+    return 0;
+}
+int number_RAT()
+{
+    for(int i=0; i<=5; i++)
+    {
+        for (int j=i; j>=1; j--)
+        {
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+
+}
+int number_right_triangle()
+{
+    for(int i=0; i<=5; i++)
+    {
+        for(int j=0; j<=i; j++)
+        {
+            printf("%d",i);
+
+        }
+        printf("\n");
+    }
+}
+int square()
+{
+    for(int i=0; i<=5; i++)
+    {
+        for(int j=0; j<=5; j++)
+        {
+            printf(" * ");
+        }
+        printf("\n");
+    }
+}
+int numbers()
+{
+  for(int i=0; i<=10; i++)
+    {
+        printf("%d\n",i);
+    }
+}
+int starsTriangle()
+{
+    for(int i=0; i<=5; i++)
+    {
+        for(int j=0; j<=i; j++)
+        {
+            printf("*");
+        }
+       printf("\n");
+    }
+}
+int oneZero()
+{
+
+}
+int diamond()
+{
+
+}
